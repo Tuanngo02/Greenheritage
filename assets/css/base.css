@@ -1,0 +1,134 @@
+:root {
+    --white-color :#fff;
+    --black-color :#000;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* phần chung cho từng mục sản phẩm */
+.header{
+    display: flex;
+    padding: 32px 16px;
+    background-color: rgb(240, 235, 206,0.3);
+}
+.header__content{
+    width: 50%;
+}
+.header__content-name{
+    font-size: 4.6rem;
+}
+.header__content-subname{
+    font-size: 2.2rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+.header__content-desc{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.header__img{
+    width: 50%;
+    height: 300px;
+}
+.header__img-img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.header__img-no-mask{
+    width: 77%;
+    height: 100%;
+    border-radius: 41px;
+    box-shadow: 6px 6px 17px #999;
+}
+.mask{
+    width: 75%;
+    height: 100%;
+    -webkit-mask: url(../img/mask.png);
+    -webkit-mask-size: auto 117%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+.mask1{
+    width: 75%;
+    height: 100%;
+    -webkit-mask: url(/DACS/assets/img/mask1.png);
+    -webkit-mask-size: auto 117%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+.header__content-conservation{
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+.header__content-conservation--level{
+    background-position: 0 -1157px;
+    height: 70px;
+    width: 400px;
+}
+.header__content-conservation--level-en{
+    background-position: 0 -407px;
+    height: 70px;
+    width: 400px;
+}
+.header__content-conservation--level-cr{
+    background-position: 0 -207px;
+    height: 70px;
+    width: 400px;
+}
+.header__content-conservation--level-ew{
+    background-position: 0 -487px;
+    height: 70px;
+    width: 400px;
+}
+.img-level{
+    background-image: url(../img/capdotuyetchung.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-text{
+    width: 77%;
+    padding-right: 34px;
+    border-right: 1px solid #ccc;
+}
+.text-heading{
+    font-size: 2.4rem;
+}
+.text-heading__description{
+    line-height: 24px;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.text-heading__img{
+    width: 100%;
+}
+.text-img{
+    display: flex;
+}
+.text-img-img{
+    width: 50%;
+}
+.text-img-img1{
+    border-radius: 55% 45% 70% 30%/49% 65% 35% 51%;
+    padding-right: 5px;
+}
+.text-img-img2{
+    border-radius: 68% 32% 70% 30%/38% 64% 36% 62%;
+}
+.text-video__control{
+    width: 100%;
+    padding-top: 20px;
+}
