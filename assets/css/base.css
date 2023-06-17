@@ -2,11 +2,15 @@
     --white-color :#fff;
     --black-color :#000;
     --text-color: #333;
+    --text-heading :rgb(57, 81, 68);
+    --red-color: rgb(233, 31, 31);
+    --background-color: rgb(240, 235, 206,0.2)
 }
 *{
     box-sizing: inherit;
 }
 html {
+    /* text-align: center; */
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -131,4 +135,24 @@ html {
 .text-video__control{
     width: 100%;
     padding-top: 20px;
+}
+/* UL-UX  MENU  */
+.mobile-menu-btn{
+    display: none;
+    height: 50px;
+}
+.menu-icon{
+       /* display: block; */
+       color: #FFF;
+       font-size: 15px;
+       /* line-height: 50px; */
+       padding: 0 23px;
+       position: relative;
+       top: 25px;
+}
+.mobile-menu-btn:hover{
+    background-color: var(--white-color);
+}
+.mobile-menu-btn:hover .menu-icon{
+    color: var(--black-color);
 }

@@ -189,7 +189,7 @@
         max-width: 25%;
     }
 
-    .m-4 {
+    .m-4-111 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
@@ -281,12 +281,12 @@
 /* PC low resolution(pc màn hình phân giải thấp) trở lên */
 @media (min-width: 1113px){
     .row{
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
     .col{
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
     .l-0 {
         display: none;

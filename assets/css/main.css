@@ -1,88 +1,182 @@
-/* trang chủ */
-.background{
-    width: 100%;
-    height: auto;
+/* body{
+    font-size: 62.5%;
+    margin :0;
+    background-color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+} */
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
-.pic{
-    width: 100%;
-    height: 500px;
-}
-.logo{
-    position: fixed;
-    z-index: 1;
-    width: 280px;
-    height: 120px;
-    left: 180px;
-    top: -15px;
-}
-.menutren{
+.banner .bg{
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 90px;
-    top: 0px;  
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center ;
+    transition: 0.1s;
 }
-.bgrblack{
-    background-color: black;
-    opacity: 0.5;
-    position: fixed;
-    z-index: 1;
+.banner .bg-1{
+    background-image: url('../img/F0.png');
+}
+.banner .bg-2{
+    background-image: url('../img/F1.png');
+}
+.banner .bg-3{
+    background-image: url('../img/F23.png');
+}
+.banner .bg-4{
+    background-image: url('../img/F23\ no\ river.png');
+}
+.banner .bg-5{
+    background-image: url('../img/F45.png');
+}
+.banner .bg-6{
+    background-image: url('../img/F6.png');
+}
+.banner .bg-7{
+    background-image: url('../img/parallax8.png');
+}
+.banner  h1{
+    position: absolute;
+    top: 30%;
+    left: 0;
     width: 100%;
-    height: 90px;
-    top: 0px;
+    text-align: center;
+    font-size: 8.6rem;
+    font-family: 'Pacifico', cursive;
+    color: #07c346;
 }
-.menutren__item{
-    text-decoration: none;
-    color: white;
-    margin: 7px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.menutren__item:hover{
-    color: wheat;
-    text-decoration: none;
-}
-.menutren1{
-    position: fixed;
-    z-index: 1;
-    width: 520px;
-    height: 34px;
-    right: 160px;
-    top: 32px;
-}
-.chude{
+.banner_text{
     position: absolute;
-width: 930px;
-height: 112px;
-left: 300px;
-text-align: center;
-top: 200px;
-font-family: 'Saira Stencil One', cursive;
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 39px;
-display: flex;
-
-color: white;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.chudephu{
-    font-family: 'Noto Sans', sans-serif;
-    position: absolute;
-width: 100%;
-height: 38px;
-top: 310px;
-text-align: center;
-font-size: 2.5rem;
-line-height: 27px;
-color: white;
-mix-blend-mode: hard-light;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    line-height: 35px;
+    font-size: 2.6rem;
+    color: rgba(50, 165, 88);
 }
 .intro{
+    
+}
+.intro img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.intro p{
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+.intro button{
+    background-color: #FD0003;
+    padding: 10px 50px;
+    border: 1px solid #591F1D;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+.library{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: #fff;
+}
+.library img{
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 5rem;
+    }
+    .library{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .library img{
+        height: 300px;
+    }
+}
+
+
+
+
+/* trang chủ */
+.heading_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+header{
+    /* width: 1300px; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+header .logo img{
+    height: 100px;
+}
+header nav{
+    width: 80%;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+header nav ul a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 0 4px;
+    border-radius: 25px;
+}
+header nav ul li{
+    padding: 6px 22px;
+    color: #fff;
+}
+header nav ul li:hover{
+    color: #ccc;
+}
+.intro{
+    color: var(--text-heading);
     font-family: 'Saira Stencil One', cursive;
-    font-size: 50px;
+    font-size: 5.4rem;
+    text-align: center;
+    padding: 15px 0;
 }
 .noidung1{
     display: flex;
@@ -95,7 +189,7 @@ mix-blend-mode: hard-light;
     border-radius: 15px;
     /* border-radius: 69% 31% 71% 29% / 37% 70% 30% 63%; */
     height: 376px;
-    width: 27%;
+    width: 30%;
 }
 .sachdo1{
     position: absolute;
@@ -104,6 +198,8 @@ mix-blend-mode: hard-light;
     right: 80px;
 }
 .sd{
+    text-align: left;
+    width: 40%;
     z-index: 1;
     margin-left: 30px;
 }
@@ -112,14 +208,14 @@ mix-blend-mode: hard-light;
     margin-top: 50px;
 }
 .sd2{
-    width: 500px;
+    /* width: 500px; */
     font-size: 20px;
     margin-top: 40px;
 }
 .sd3{
     margin-top: 60px;
-    margin-left: -220px;
-    width: 270px;
+    /* margin-left: -220px; */
+    /* width: 270px; */
     height: 70px;
     border-radius: 6px;
     font-size: 24px; color: red;
@@ -128,14 +224,14 @@ mix-blend-mode: hard-light;
 .sd3:hover{
     color: white;
     background-color: rgb(237, 49, 49);
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 /* trang chủ */
 .content__heading-text{
     font-family: 'Saira Stencil One', cursive;
     text-align: center;
-    
-    font-size: 3.8rem;
+    margin-top: 10px;
+    font-size: 4.2rem;
     color: rgb(57, 81, 68);
 }
 .content__select-box{
@@ -212,4 +308,332 @@ mix-blend-mode: hard-light;
 .text{
     background-color: aqua;
     height: 34px;
+}
+/* phần bản đồ việt nam */
+.MapVn{
+    position: relative;
+    text-align: center;
+}
+.MapVn_block{
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: 0;
+    justify-content: space-around;
+}
+.MapVn_block2{
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    left: 0;
+    justify-content: space-around;
+}
+.MapVn > img{
+    width: 30%;
+}
+.MapVn__introduce-cr{
+    /* position: absolute;
+    top: 41px;
+    right: 280px;
+    width: 350px; */
+    width: 30%;
+    border-radius: 10px ;
+    box-shadow: 0px 1px 14px rgb(215, 6, 6);
+}
+.MapVn__introduce-en{
+    /* position: absolute;
+    top: 190px;
+    left: 256px;
+    width: 350px; */
+    transform: translateY(-90px);
+    width: 30%;
+    border-radius: 10px ;
+    box-shadow: 0px 1px 14px rgb(215, 6, 6);
+}
+.MapVn__introduce-vu{
+    /* position: absolute;
+    top: 309px;
+    right: 198px;
+    width: 350px; */
+    width: 30%;
+    border-radius: 10px ;
+    box-shadow: 0px 1px 14px rgb(215, 6, 6);
+}
+.MapVn__introduce-nt{
+    /* position: absolute;
+    top: 477px;
+    left: 226px;
+    width: 350px; */
+    transform: translateY(-90px);
+    width: 30%;
+    border-radius: 10px ;
+    box-shadow: 0px 1px 14px rgb(215, 6, 6);
+}
+.MapVn__warning{
+    width: 45px;
+    height: 45px;
+}
+.MapVn__level{
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--red-color);
+}
+.MapVn__derc{
+    display: block;
+    font-size: 1.4rem;
+}
+.footer{
+    text-align: center;
+}
+.footer > span{
+    display: block;
+    line-height: 34px;
+    background-color: var(--background-color);
+}
+/* DANH MỤC */
+.content__select{
+    display: flex;
+    justify-content: space-between;
+}
+.note_heading{
+    font-size: 2.4rem;
+}
+.note_heading > i {
+    color: #FD0003;
+}
+.note_heading > span {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: rgb(253, 0, 3,0.8);
+}
+.note_information{
+    margin-top: 5px;
+    width: 12.5%;
+    display: flex;
+}
+.note_information > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.note_information > span {
+    margin-left: 3px;
+    font-size: 1.8rem;
+}
+/* BẢO TỒN */
+.content__heading_animation-block{
+    margin-top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__heading_animation{
+    /* font-size: 3.6rem; */
+    /* display: inline-block; */
+    width: 34px;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid green;
+    animation: typing 4s steps(38) infinite,
+    caret 0.5s steps(2) infinite;
+}
+@keyframes caret{
+    from{
+        border-right: transparent;
+    }to{
+        border-right: 5px solid green;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }to{
+        width: 55%;;
+    }
+}
+.box_baoton{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+.baoton_img{
+    width: 50%;
+    height: 300px;
+}
+.baoton_img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.baoton_text{
+    margin-top: 20px;
+    width: 30%;
+}
+.baoton_text_1{
+    display: block;
+    font-size: 3.4rem;
+    text-align: center;
+    line-height: 40px;
+}
+.baoton_text_2{
+    padding-top: 15px;
+    font-size: 1.8rem;
+    line-height: 32px;
+    text-align: justify;
+    display: block;
+}
+.wrap{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height:100vh;
+    /* padding:50px; */
+    background-color: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+#slide{
+    width:max-content;
+    margin-top:50px;
+}
+.item{
+    width:200px;
+    height:300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:  0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width:100%;
+    height:100%;
+    box-shadow: none;
+}
+.item:nth-child(3){
+    left:50%;
+    /* display: none; */
+}
+.item:nth-child(4){
+    left:calc(50% + 220px);
+    /* display: none; */
+}
+.item:nth-child(5){
+    left:calc(50% + 440px);
+    /* display: none; */
+}
+.item:nth-child(n+6){
+    left:calc(50% + 660px);
+    opacity: 0;
+    /* display: none; */
+}
+.item .content{
+    position: absolute;
+    top:50%;
+    left:100px;
+    width:400px;
+    text-align: left;
+    padding:0;
+    color:#eee;
+    transform: translate(0,-50%);
+    display: none;
+    font-family: system-ui;
+}
+.item:nth-child(2) .content{
+    display: block;
+    z-index: 11111;
+}
+.item .name{
+    font-size: 5.2rem;
+    font-weight: bold;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 1 forwards
+}
+.item .des{
+    font-size: 2.2rem;
+    margin:20px 0;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 0.3s 1 forwards
+}
+.item button{
+    padding:10px 20px;
+    border:none;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 0.6s 1 forwards
+}
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter:blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter:blur(0);
+    }
+}
+.buttons{
+    position: absolute;
+    bottom:30px;
+    z-index: 222222;
+    text-align: center;
+    width:100%;
+}
+.buttons button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #555;
+    transition: 0.5s;
+}.buttons button:hover{
+    background-color: #bac383;
+}
+.box_container{
+    margin-bottom: 25px;
+}
+.item_1{
+    height: 186px;
+    /* background-position: center; */
+    /* display: inline-block; */
+    transition: 1s;
+    /* background-size: cover; */
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+.item_1 .content_1{
+    /* position: absolute; */
+    /* top:100%; */
+    background-color: rgb(255, 255, 255,0.7);
+    width:100%;
+    padding:0 10%;
+    font-family: system-ui;
+    text-align: center;
+    box-shadow: 0 30px 50px #b9b9b9;
+    transition: 0.7s;
+    overflow: hidden;
+    max-height: 0;
+    border-radius: 20px;
+}
+.item_1 .content_1 .name_1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+}
+.item_1:hover .content_1{
+    max-height: 110px;
+}
+.item_1:hover{
+    background-size: 250%;
 }

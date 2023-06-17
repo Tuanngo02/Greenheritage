@@ -1,0 +1,207 @@
+
+
+/* mobile và tablet*/
+@media (max-width: 63.9375em){
+    .MapVn{
+        display: flex;
+    }
+    .sachdo1{
+        display: none;
+    }
+    .MapVn_block{
+        position: inherit;
+        flex-direction: column;
+    }
+    .MapVn_block2{
+        position: inherit;
+        flex-direction: column;
+    }
+    .MapVn__introduce-en{
+        transform: translateY(0);
+    }
+    .MapVn__introduce-nt{
+        transform: translateY(0);
+    }
+    .MapVn__introduce{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .item:nth-child(5){
+        display: none;
+    }
+    .item:nth-child(n+6){
+        display: none;
+    }
+    .content__heading_animation{
+        animation: none;
+        border: none;
+        white-space: normal;
+        letter-spacing: normal;
+        width: 100%;
+    }
+}
+/* Tablet */
+@media (min-width: 46.1875em) and (max-width: 63.9375em ){
+    .sachdo{
+        width: 40%;
+    }
+    .sd{
+        width: 60%;
+    }
+    .sd1{
+        margin-top: 0;
+    }
+    .MapVn > img{
+        width: 50%;
+    }
+    .MapVn_wrap{
+        width: 50%;
+    }
+    .lc,.ne{
+        display: none;
+    }
+    .item .content{
+        width: 290px;
+    }
+}
+/* mobile */
+@media (max-width: 46.1875em){
+    .heading_header{
+        padding: 0;
+    }
+    header .logo img{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 50px;
+        width: 34%;
+    }
+    header{
+        justify-content: end;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        display: block;
+        padding: 0;
+        background-color: #000;
+    }
+    header nav ul a{
+        border: none;
+        display: block;
+        margin: 0;
+    }
+    header nav ul a:hover li {
+        background-color: #ccc;
+        color: #000;
+        display: block;
+        text-decoration: none !important;
+    }
+    header nav ul li{
+        color: var(--white-color) !important;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    .header_heading{
+        position: relative;
+        margin-top: -15px;
+        background-color: #000;
+    }
+    #nav{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .intro{
+        font-size: 4.2rem;
+    }
+    .sachdo{
+        width: 45%;
+        height: 300px;
+    }
+    .sd1{
+        margin-top: 0;
+        font-size: 2.6rem;
+    }
+    .sd2{
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+    .sd3{
+        margin-top: 20px;
+        font-size: 2.0rem;
+    }
+    .sd{
+        width: 55%;
+    }
+    .MapVn > img{
+        display: none;
+    }
+    .MapVn{
+        display: block;
+        text-align: center;
+    }
+    .lc,.ne,.nt,.ex{
+        display: none;
+    }
+    .note_information{
+        width: 25%;
+    }
+    .content__heading-text{
+        font-size: 3.4rem;
+    }
+    .note_heading > span{
+        font-size: 2.4rem;
+    }
+    .content__select-box{
+        text-align: start;
+    }
+    .content__select-option{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .content__select-text{
+        font-size: 1.8rem;
+        color: #000;
+    }
+    .item:nth-child(3){
+        display: none;
+    }
+    .item:nth-child(4){
+        display: none;
+    }
+    .item .content{
+        padding-left: 10px;
+        width: 100%;
+        left: 0;
+    }
+    .item .name{
+        font-size: 3.2rem;
+    }
+    .box_baoton{
+        flex-direction: column;
+    }
+    .box_baotonlonnguoc{
+        flex-direction: column-reverse;
+    }
+    .baoton_img{
+        width: 100%;
+    }
+    .baoton_text{
+        width: 100%;
+    }
+    .item_1{
+        height: 400px;
+    }
+    .item_1:hover .content_1{
+        max-height: 150px;
+    }
+    .item_1 .content_1 .name_1{
+        font-size: 2.8rem;
+    }
+}
