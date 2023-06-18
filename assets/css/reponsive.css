@@ -208,4 +208,16 @@
         font-weight: normal;
         background-color: transparent;
     }
+    .content-text{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header__content{
+        width: 100%;
+    }
+    .header__img{
+        width: 100%;
+    }
 }
