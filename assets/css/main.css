@@ -645,6 +645,7 @@ header nav ul li:hover{
 
 /* LIÊN HỆ */
 .contactUS{
+    background-color: #210002;
     position: relative;
     width: 100%;
     padding: 40px 100px;
