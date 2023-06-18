@@ -204,4 +204,8 @@
     .item_1 .content_1 .name_1{
         font-size: 2.8rem;
     }
+    .header_heading_bold{
+        font-weight: normal;
+        background-color: transparent;
+    }
 }
